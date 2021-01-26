@@ -1,2 +1,2 @@
 # Diplomka
-Parní kotel na biomasu menších výkonů
+MODULARNÍ HORIZONTÁLNÍ KOTEL – HRSG

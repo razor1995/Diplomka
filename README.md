@@ -2,6 +2,7 @@
 
 ## Modulární horizontální kotel - HRSG
 
-Výpočty uvnitř složky "Calculations"
+Výpočty uvnitř složky "Calculations", případně v odkazu níže.
 
-Text zde: https://www.overleaf.com/read/tvsmmhvfszfp
+* Text: https://www.overleaf.com/read/tvsmmhvfszfp
+* Záložní zdroj výpočtů: https://nbviewer.jupyter.org/github/AloisPrimes/Diplomka/blob/main/Calculations/Diplomka.ipynb

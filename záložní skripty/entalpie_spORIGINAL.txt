@@ -1,0 +1,34 @@
+def entalpie_sp(teplota, jednotka):
+
+    """
+    teplota = zadávat ve °C
+    jednotka = 'kg' / 'm3n'
+
+    Vypočítá entalpii [kJ/kg nebo kJ/m3n] spalin při dané teplotě [°C]. Výstupem je dictionary. Pro zobrazení entalpie dané teploty je nutné vybrat prvek ['N2', 'O2', 'H2O', 'CO2', 'Ar', 'sp'].
+    """
+
+    h_N2 = (a_1_N2 + a_2_N2*(teplota+T)/2 + a_3_N2*(teplota+T)**2/3 + a_4_N2*(teplota+T)**3/4 + a_5_N2*(teplota+T)**4/5 + a_6_N2/(teplota+T))*((R*(teplota+T))/M_N2)/1000 #kJ/kg
+    I_N2 = h_N2*m_sp
+
+    h_O2 = (a_1_O2 + a_2_O2*(teplota+T)/2 + a_3_O2*(teplota+T)**2/3 + a_4_O2*(teplota+T)**3/4 + a_5_O2*(teplota+T)**4/5 + a_6_O2/(teplota+T))*((R*(teplota+T))/M_O2)/1000 #kJ/kg
+    I_O2 = h_O2*m_sp
+
+    h_H2O = (a_1_H2O + a_2_H2O*(teplota+T)/2 + a_3_H2O*(teplota+T)**2/3 + a_4_H2O*(teplota+T)**3/4 + a_5_H2O*(teplota+T)**4/5 + a_6_H2O/(teplota+T))*((R*(teplota+T))/M_H2O)/1000 #kJ/kg
+    I_H2O = h_H2O*m_sp
+
+    h_CO2 = (a_1_CO2 + a_2_CO2*(teplota+T)/2 + a_3_CO2*(teplota+T)**2/3 + a_4_CO2*(teplota+T)**3/4 + a_5_CO2*(teplota+T)**4/5 + a_6_CO2/(teplota+T))*((R*(teplota+T))/M_CO2)/1000 #kJ/kg
+    I_CO2 = h_CO2*m_sp
+
+    h_Ar = (a_1_Ar + a_2_Ar*(teplota+T)/2 + a_3_Ar*(teplota+T)**2/3 + a_4_Ar*(teplota+T)**3/4 + a_5_Ar*(teplota+T)**4/5 + a_6_Ar/(teplota+T))*((R*(teplota+T))/M_Ar)/1000 #kJ/kg
+    I_Ar = h_Ar*m_sp
+
+    h_spalin = w_N2*h_N2 + w_O2*h_O2 + w_H2O*h_H2O + w_CO2*h_CO2 + w_Ar*h_Ar #kJ/kg
+    I_spalin = w_N2*I_N2 + w_O2*I_O2 + w_H2O*I_H2O + w_CO2*I_CO2 + w_Ar*I_Ar #kJ/m3n
+
+
+    if jednotka == 'kg':
+        return {'N2': h_N2, 'O2': h_O2, 'H2O': h_H2O , 'CO2': h_CO2, 'Ar': h_Ar, 'sp': h_spalin}
+    elif jednotka == 'm3n':
+        return {'N2': I_N2, 'O2': I_O2, 'H2O': I_H2O , 'CO2': I_CO2, 'Ar': I_Ar, 'sp': I_spalin}
+    else:
+        print('Nutno zadat jednotku - kg / m3n!')

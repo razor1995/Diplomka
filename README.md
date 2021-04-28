@@ -15,15 +15,15 @@ Výpočty uvnitř složky "Calculations", případně v odkazu níže.
 5. Přehled vypočtených hodnot (1 tabulka pro vodu, druhá pro spaliny)
 6. Návrh spalinového kanálu
 7. Výpočet tepelných plot
-  * Přehřívák 1
-  * Přehřívák 2
-  * Výparník 1
-  * Výparník 2
-  * Ekonomizér 1
-  * Ekonomizér 2
-9. Přehled vypočtených hodnot
-10. Skutečný pilový diagram
-11. Návrh a výpočet bubnu
-12. Návrh a výpočet potrubí
-13. Tahové a tlakové ztráty kotle a komína
-14. Závěr
+   * Přehřívák 1
+   * Přehřívák 2
+   * Výparník 1
+   * Výparník 2
+   * Ekonomizér 1
+   * Ekonomizér 2
+8. Přehled vypočtených hodnot
+9. Skutečný pilový diagram
+10. Návrh a výpočet bubnu
+11. Návrh a výpočet potrubí
+12. Tahové a tlakové ztráty kotle a komína
+13. Závěr

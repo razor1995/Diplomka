@@ -15,12 +15,12 @@ Výpočty uvnitř složky "Calculations", případně v odkazu níže.
 5. Přehled vypočtených hodnot (1 tabulka pro vodu, druhá pro spaliny)
 6. Návrh spalinového kanálu
 7. Výpočet tepelných plot
-* Přehřívák 1
-* Přehřívák 2
-* Výparník 1
-* Výparník 2
-* Ekonomizér 1
-* Ekonomizér 2
+  * Přehřívák 1
+  * Přehřívák 2
+  * Výparník 1
+  * Výparník 2
+  * Ekonomizér 1
+  * Ekonomizér 2
 9. Přehled vypočtených hodnot
 10. Skutečný pilový diagram
 11. Návrh a výpočet bubnu
